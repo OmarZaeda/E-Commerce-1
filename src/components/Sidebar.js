@@ -11,8 +11,8 @@ const Sidebar = () => {
   return (
     <div
       className={`${
-        isOpen ? "right-0" : "-right-full"
-      } w-full bg-white fixed top-0 h-full shadow-2xl md:max-w-[45vw] lg:max-w-[40vw] transition-all duration-500 z-20 px-4 lg:px-[35px]`}
+        isOpen ? "flex right-0" : "hidden -right-full"
+      } w-full bg-white fixed top-0 flex-col h-screen shadow-2xl md:max-w-[45vw] lg:max-w-[40vw] transition-all duration-500 z-20 px-4 lg:px-[35px]`}
     >
       <div className="flex items-center justify-between py-6 border-b">
         <div className="uppercase text-sm font-semibold">
